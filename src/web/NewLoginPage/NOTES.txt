@@ -1,0 +1,10 @@
+open sqlite3
+.open "data-dev.sqlite"
+ATTACH "data-dev.sqlite" as my_db
+.mode list
+SELECT * FROM users;
+
+https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps
+http://www.jakowicz.com/flask-apache-wsgi/
+http://flask.pocoo.org/docs/0.10/deploying/mod_wsgi/
+http://www.fullstackpython.com/wsgi-servers.html
