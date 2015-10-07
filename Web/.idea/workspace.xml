@@ -1,128 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d38fd6b1-7b06-4680-9f7b-dc0e4c89d14d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/403.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/migrations/versions/56ed7d33de8d_user_roles.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/decorators.py" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\Python-ast.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\Python.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\abstract.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\asdl.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\ast.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\bitset.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\boolobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\bufferobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\bytearrayobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\bytes_methods.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\bytesobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\cStringIO.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\cellobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\ceval.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\classobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\cobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\code.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\codecs.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\compile.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\complexobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\datetime.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\descrobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\dictobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\dtoa.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\enumobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\errcode.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\eval.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\fileobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\floatobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\frameobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\funcobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\genobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\graminit.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\grammar.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\import.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\intobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\intrcheck.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\iterobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\listobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\longintrepr.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\longobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\marshal.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\memoryobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\metagrammar.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\methodobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\modsupport.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\moduleobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\node.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\object.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\objimpl.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\opcode.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\osdefs.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\parsetok.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\patchlevel.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pgen.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pgenheaders.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\py_curses.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pyarena.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pycapsule.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pyconfig.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pyctype.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pydebug.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pyerrors.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pyexpat.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pyfpe.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pygetopt.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pymacconfig.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pymactoolbox.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pymath.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pymem.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pyport.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pystate.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pystrcmp.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pystrtod.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pythonrun.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\pythread.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\rangeobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\setobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\sliceobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\stringobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\structmember.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\structseq.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\symtable.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\sysmodule.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\timefuncs.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\token.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\traceback.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\tupleobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\ucnhash.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\unicodeobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\warnings.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Include\weakrefobject.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\activate" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\activate.bat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\activate.ps1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\activate_this.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\alembic-script.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\alembic.exe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\alembic.exe.manifest" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\deactivate.bat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\easy_install-2.7.exe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\easy_install.exe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\mako-render" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\pip.exe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\pip2.7.exe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\pip2.exe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\python.exe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\python27.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\McClain\Documents\GitHub\CITA\Web\FlaskVirtualEnv\Scripts\pythonw.exe" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NOTES.txt" afterPath="$PROJECT_DIR$/NOTES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/NewLoginPage.iml" afterPath="$PROJECT_DIR$/.idea/NewLoginPage.iml" />
+    <list default="true" id="d38fd6b1-7b06-4680-9f7b-dc0e4c89d14d" name="Default" comment="ImportError: No module named flask.ext.pagedown">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main/__init__.py" afterPath="$PROJECT_DIR$/app/main/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main/errors.py" afterPath="$PROJECT_DIR$/app/main/errors.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewLoginPage.iws" />
@@ -146,21 +28,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.39201182">
       <split-first>
         <leaf>
-          <file leaf-file-name="NOTES.txt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="NOTES.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/NOTES.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5622933">
-                  <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+                <state vertical-scroll-proportion="0.61239195">
+                  <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
                   <folding />
                 </state>
               </provider>
@@ -202,7 +84,7 @@
             <entry file="file://$PROJECT_DIR$/app/main/__init__.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+                  <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -256,11 +138,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/manage.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.26240352">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -290,11 +172,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/__init__.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.39193085">
+                  <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
                   <folding>
                     <element signature="e#0#23#0" expanded="true" />
                   </folding>
@@ -332,14 +214,15 @@
         <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/main/views.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/app/__init__.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/app/decorators.py" />
         <option value="$PROJECT_DIR$/app/main/__init__.py" />
         <option value="$PROJECT_DIR$/app/main/errors.py" />
         <option value="$PROJECT_DIR$/app/templates/403.html" />
         <option value="$PROJECT_DIR$/migrations/versions/56ed7d33de8d_user_roles.py" />
         <option value="$PROJECT_DIR$/NOTES.txt" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
       </list>
     </option>
   </component>
@@ -702,19 +585,26 @@
       <option name="project" value="LOCAL" />
       <updated>1444087474138</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ImportError: No module named flask.ext.pagedown">
+      <created>1444238589853</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1444238589853</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262032" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933232" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" weight="0.38074866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="923" y="501" width="74" height="29" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22780749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="923" y="501" width="74" height="29" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22378379" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15953545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -723,7 +613,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -744,7 +633,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login working with contents" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login working with contents" />
+    <MESSAGE value="ImportError: No module named flask.ext.pagedown" />
+    <option name="LAST_COMMIT_MESSAGE" value="ImportError: No module named flask.ext.pagedown" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1019,34 +909,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/main/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1087,14 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NOTES.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5622933">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1105,21 +963,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+    <entry file="file://$PROJECT_DIR$/NOTES.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61239195">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26240352">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39193085">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
