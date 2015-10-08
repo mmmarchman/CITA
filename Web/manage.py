@@ -70,7 +70,6 @@ def deploy():
     upgrade()
 
     # create user roles
-    Role.insert_roles()
 
 
 
