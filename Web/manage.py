@@ -70,7 +70,7 @@ def deploy():
     upgrade()
 
     # create user roles
-    Role.insert_roles()
+    # Role.insert_roles()
 
 
 if __name__ == '__main__':
