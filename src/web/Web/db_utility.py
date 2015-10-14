@@ -1,5 +1,6 @@
-__author__ = 'Doug'
+#!/usr/bin/python
 
+__author__ = 'Doug'
 
 import db_access
 
