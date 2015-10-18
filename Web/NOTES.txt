@@ -47,5 +47,11 @@ netstat -tulpn
 
 -------------------------------------------------
 
+parser.py:
+
+http://okfnlabs.org/blog/2013/11/11/python-nlp.html
+http://www.nltk.org/book/ch01.html
+
+
 
 ------------------------------------------------
