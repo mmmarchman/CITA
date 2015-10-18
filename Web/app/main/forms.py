@@ -1,8 +1,18 @@
 from flask.ext.wtf import Form
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, SelectField, HiddenField
 from wtforms.validators import Required
 
 
 class NameForm(Form):
-    name = StringField('What is your name?', validators=[Required()])
+    product = SelectField(u'product')
+    subproduct = SelectField('subproduct')
+    issue = SelectField('issue')
+    subissue = SelectField('subissue')
+    company = SelectField('company')
+    state = SelectField('state')
     submit = SubmitField('Submit')
+
+class ProfileForm(Form):
+    username = StringField('User Name')
+    companyname = StringField('Company Name')
+    email = StringField('Email')

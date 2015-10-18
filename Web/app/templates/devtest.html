@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Profile Management{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+<h1>Basic user profile information along with fake contact info where the client can reach us</h1>
+</div>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=POST action="/devtest">
+    {{ render_field(form.username) }}<p>
+    {{ render_field(form.companyname) }}<p>
+    {{ render_field(form.email) }}<p>
+<p><p><br /><input type=submit value="Contact Us">
+</form>
+
+<br /><br />
+{% endblock %}
