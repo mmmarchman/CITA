@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Dev Testing{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+<h1>Simple page for testing development ideas outside the main pages.  Prevents breaking anything that already works.</h1>
+</div>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=POST action="/devtest">
+    {{ render_field(form.product) }}
+    {{ render_field(form.subproduct) }}    
+    {{ render_field(form.issue) }}
+    {{ render_field(form.subissue) }}
+    {{ render_field(form.company) }}
+    {{ render_field(form.state) }}
+<p><p><br /><input type=submit value="Search for Trends">
+</form>
+
+
+<br /><br />
+{% endblock %}
