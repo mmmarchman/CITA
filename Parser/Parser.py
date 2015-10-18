@@ -26,10 +26,12 @@ class Parser(object):
 
         # Creates a single list from list_strings
         self.word_list.append(' '.join(self.list_strings))
-        ''.join(self.word_list)
+        #''.join(self.word_list)
 
         #self.word_list = nltk.wordpunct_tokenize(i for i in self.list_of_strings)
-        #self.word_list = nltk.sent_tokenize(self.word_list[0])
+        self.word_list = nltk.sent_tokenize(str(self.word_list[0]))
+        for sentence in self.word_list:
+            self.word_list = nltk.word_tokenize(sentence)
         print self.word_list
 
 
