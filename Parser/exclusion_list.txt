@@ -1,6 +1,3 @@
-# exclusion_list created by 'McClain Marchman' on 9/15/2015
-# Sources - http://www.link-assistant.com/seo-stop-words.html
-#
 a
 able
 about
