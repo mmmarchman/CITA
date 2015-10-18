@@ -8,7 +8,7 @@ from .. import models
 
 def get_connection():
     # For local testing - C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite
-    conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
+    conn = sqlite3.connect('C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite')
     return conn
 
 
@@ -27,14 +27,14 @@ def index():
     return render_template('index.html')
 
 
-@main.route('/profile', methods=['GET','POST'])
+@main.route('/profile', methods=['GET', 'POST'])
 def profile():
     if request.method == 'POST':
         flash('Something magical happens!')
     return render_template('profile.html')
 
 
-@main.route('/trends', methods=['GET','POST'])
+@main.route('/trends', methods=['GET', 'POST'])
 @login_required
 def trends():
     if request.method == 'POST':

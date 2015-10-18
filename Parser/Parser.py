@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
+""": Description of """
+
 import nltk
 
+
 __author__ = 'McClain Marchman'
+__email__ = 'mmmarchman@gmail.com'
 
 
 class Parser(object):
@@ -14,5 +18,6 @@ class Parser(object):
 
 
     def parse(self):
-        stemmer
+        stemmer = nltk.PorterStemmer()
+
 
