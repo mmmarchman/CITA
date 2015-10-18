@@ -7,7 +7,7 @@ import sqlite3
 from .. import models
 
 def get_connection():
-    conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
+    conn = sqlite3.connect('C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite')
     return conn
 
 
@@ -24,6 +24,7 @@ def before_request():
 @main.route('/')
 def index():
     return render_template('index.html')
+
 
 @main.route('/profile', methods=['GET','POST'])
 def profile():
@@ -48,7 +49,7 @@ def trends():
     return render_template('trends.html', form=form)
 
 
-@main.route('/devtest', methods=['GET','POST'])
+@main.route('/devtest', methods=['GET', 'POST'])
 @login_required
 def devtest():
     if request.method == 'POST':
