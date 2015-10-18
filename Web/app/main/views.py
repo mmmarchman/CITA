@@ -7,7 +7,7 @@ import sqlite3
 from .. import models
 
 def get_connection():
-    conn = sqlite3.connect('C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite')
+    conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
     return conn
 
 
