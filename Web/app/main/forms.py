@@ -16,3 +16,7 @@ class ProfileForm(Form):
     username = StringField('User Name')
     companyname = StringField('Company Name')
     email = StringField('Email')
+
+class ResultsForm(Form):
+    word = StringField('Word')
+    count = StringField('Count')
