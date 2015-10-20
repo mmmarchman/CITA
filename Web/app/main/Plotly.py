@@ -6,7 +6,7 @@ __author__ = 'McClain Marchman'
 
 import plotly.plotly as py
 import plotly.graph_objs as go
-py.sign_in()
+py.sign_in('mmmarchman', 'jqfkdptmgy')
 
 
 class TestPlotly:
