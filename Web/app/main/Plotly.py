@@ -30,7 +30,7 @@ class TestPlotly:
 
                 )
         ]
-        plot_url = py.plot(data, filename='CITA-Bar-Graph')
+        plot_url = py.plot(data, filename='CITA-Bar-Graph', auto_open=False)
 
 
 
