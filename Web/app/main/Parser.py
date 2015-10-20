@@ -27,18 +27,20 @@ class Parser(object):
                 self.stop_words.append(line.strip())
 
     def parse(self):
+
         # Creates a single list from list_strings
         self.word_list.append(' '.join(self.list_strings))
 
         # Divides the single list string into substrings representing a word
-        self.word_list = nltk.sent_tokenize(str(self.word_list[0]))
+        self.word_list = [nltk.sent_tokenize(line) for line in self.word_list]
 
         # Separates punctuation
         for sentence in self.word_list:
-            self.word_list = nltk.wordpunct_tokenize(sentence.lower())
+            self.word_list = nltk.wordpunct_tokenize(str(sentence).lower())
 
         # Remove all stop words in big_string
         self.word_list = [w for w in self.word_list if w not in self.stop_words]
+        print self.word_list
 
         # print "List with stopwords removed: " + str(self.word_list)
 
