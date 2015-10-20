@@ -7,8 +7,10 @@
     <h1>Welcome to Your Trending Data Section, {% if current_user.is_authenticated %}{{current_user.username}}{% else %}Please Click <a href="{{ url_for('auth.login') }}">HERE</a> to Login{% endif %}!</h1>
 </div>
 
+** need function to dynamically generate date fields and user friendly calenders for start and end date ranges to limit results **<br /><br />
+
 {% from "_formhelpers.html" import render_field %}
-<form method=POST action="/trends">
+<form method=POST action="/devtest">
     {{ render_field(form.product) }}
     {{ render_field(form.subproduct) }}    
     {{ render_field(form.issue) }}

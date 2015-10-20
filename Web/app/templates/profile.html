@@ -9,8 +9,10 @@
 
 {% from "_formhelpers.html" import render_field %}
 <form method=POST action="/profile">
-
-<p><p><br /><input type=submit value="Update Profile">
+    {{ render_field(form.username) }}<p>
+    {{ render_field(form.companyname) }}<p>
+    {{ render_field(form.email) }}<p>
+<p><p><br /><input type=submit value="Contact CITA">
 </form>
 
 <br /><br />

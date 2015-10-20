@@ -1,19 +1,24 @@
 {% extends "base.html" %}
 
-{% block title %}Profile Management{% endblock %}
+{% block title %}Trend Data Requests{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
-<h1>Basic user profile information along with fake contact info where the client can reach us</h1>
+<h1>Very basic results to show word count functioning.  Needs expansion, style, etc to clarify results to client.</h1>
 </div>
 
-{% from "_formhelpers.html" import render_field %}
-<form method=POST action="/devtest">
-    {{ render_field(form.username) }}<p>
-    {{ render_field(form.companyname) }}<p>
-    {{ render_field(form.email) }}<p>
-<p><p><br /><input type=submit value="Contact Us">
-</form>
 
+<table style="border-collapse: collapse; border: 2px solid black; padding:1px; margin:25px">
+  <tr>
+    <th style="width=30%;text-align:center; border: 2px solid black;">Word</th>
+    <th style="width=30%;text-align:center; border: 2px solid black;">Frequency</th>
+  </tr>
+{% for word in freq_dist %}
+  <tr>
+    <td style="padding:1px; border: 2px solid black;">{{ word[0] }}</td>
+    <td style="padding:1px; border: 2px solid black;">{{ word[1] }}</td>
+  </tr>
+{% endfor %}
+</table>
 <br /><br />
 {% endblock %}
