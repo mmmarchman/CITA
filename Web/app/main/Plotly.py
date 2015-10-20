@@ -9,6 +9,8 @@ import plotly.graph_objs as go
 
 
 class TestPlotly:
+    go.tools.set_credentials_file(username='mmmarchman', api_key='jqfkdptmgy')
+
 
     word_count_list = None
 
