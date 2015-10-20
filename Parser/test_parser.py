@@ -3,7 +3,7 @@
 """ Tests Parser.py"""
 
 from Parser import Parser
-from Parser import
+from Plotly import TestPlotly
 
 
 __author__ = 'McClain Marchman'
@@ -17,4 +17,4 @@ freq_dist = parse.parse()
 
 print freq_dist
 
-plot = test_plotly(freq_dist)
+plot = TestPlotly(freq_dist)
