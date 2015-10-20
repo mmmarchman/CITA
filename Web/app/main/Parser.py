@@ -40,7 +40,6 @@ class Parser(object):
 
         # Remove all stop words in big_string
         self.word_list = [w for w in self.word_list if w not in self.stop_words]
-        print self.word_list
 
         stemmer = nltk.PorterStemmer()
 
