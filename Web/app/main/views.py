@@ -9,7 +9,14 @@ from Parser import Parser
 
 
 def get_connection():
+
+    
+    # For local testing - C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite
+    # For deployment on the LAMP Server - /var/www/html/CITA/Web/data-dev.sqlite
     conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
+
+    #conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
+
     return conn
 
 
@@ -21,8 +28,14 @@ def dictionary_factory(cursor, row):
 @main.before_request
 def before_request():
     g.user = current_user.get_id()
+<<<<<<< HEAD
     if current_user.is_authenticated:
        g.companyid = current_user.company_id
+=======
+
+    if current_user.is_authenticated:
+        g.companyid = current_user.company_id
+>>>>>>> refs/remotes/origin/McClainTestBranch
     g.citadb = get_connection()
 
 
@@ -62,6 +75,7 @@ def trends():
 @login_required
 def history():
     return render_template('history.html')
+
 
 @main.route('/datamanagement')
 @login_required
@@ -125,9 +139,9 @@ def devtest():
                     testlist.append(str(e))
         parse = Parser(testlist, 100)
         freq_dist = parse.parse()
-        flash(u"Initial SQL query results: %s" % resultlist)
-        flash(u"Convertion removes null, decodes, converts to list of strings: %s" %testlist)
-        flash(u"Parse results: %s" %freq_dist)
-        return render_template('devtest.html', freq_dist = freq_dist) 
+        #flash(u"Initial SQL query results: %s" % resultlist)
+        #flash(u"Convertion removes null, decodes, converts to list of strings: %s" %testlist)
+        #flash(u"Parse results: %s" %freq_dist)
+        return render_template('devtest.html', freq_dist=freq_dist)
 
 
