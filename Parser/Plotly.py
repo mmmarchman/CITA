@@ -25,9 +25,12 @@ class TestPlotly:
             x=counts,
             y=words, # ['Red', 'Green', 'Blue']
             orientation='h',
+            name='CITA',
+            text='Frequency of Words'
+
                 )
         ]
-        plot_url = py.plot(data, filename='horizontal-bar')
+        plot_url = py.plot(data, filename='CITA-Bar-Graph')
 
 
 
