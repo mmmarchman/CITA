@@ -3,6 +3,7 @@
 """ Creates a Parser object which takes in a list of strings and returns a frequency dist list"""
 
 import nltk
+from Plotly import TestPlotly
 
 __author__ = 'McClain Marchman'
 __email__ = 'mmmarchman@gmail.com'
@@ -21,7 +22,7 @@ class Parser(object):
         self.top_n = top_n
 
         # Make a usable list of the words in exclusion_list.txt
-        with open('/var/www/html/CITA/Web/app/main/exclusion_list.txt') as excl_file:
+        with open('C:\Users\McClain\Documents\GitHub\CITA\Web\\app\main\exclusion_list.txt') as excl_file:
             for line in excl_file:
                 self.stop_words.append(line.strip())
 
@@ -53,5 +54,8 @@ class Parser(object):
         # Creates a frequency distribution based on words in self.word_list
         fdist = nltk.FreqDist(self.word_list)
         fdist = fdist.most_common(self.top_n)
+
+        graph = TestPlotly(fdist)
+
 
         return fdist

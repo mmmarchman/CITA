@@ -55,3 +55,9 @@ http://www.nltk.org/book/ch01.html
 
 
 ------------------------------------------------
+
+ Plotly
+
+ Even better, save your credentials permanently using the 'tools' module:
+>>> import plotly.tools as tls
+>>> tls.set_credentials_file(username='username', api_key='api-key')

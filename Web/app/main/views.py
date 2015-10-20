@@ -9,14 +9,14 @@ from Parser import Parser
 
 
 def get_connection():
-<<<<<<< HEAD
+
     
     # For local testing - C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite
     # For deployment on the LAMP Server - /var/www/html/CITA/Web/data-dev.sqlite
     conn = sqlite3.connect('C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite')
-=======
-    conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
->>>>>>> refs/remotes/origin/master
+
+    #conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
+
     return conn
 
 
@@ -131,9 +131,9 @@ def devtest():
                     testlist.append(str(e))
         parse = Parser(testlist, 100)
         freq_dist = parse.parse()
-        flash(u"Initial SQL query results: %s" % resultlist)
-        flash(u"Convertion removes null, decodes, converts to list of strings: %s" %testlist)
+        #flash(u"Initial SQL query results: %s" % resultlist)
+        #flash(u"Convertion removes null, decodes, converts to list of strings: %s" %testlist)
         flash(u"Parse results: %s" %freq_dist)
-        return render_template('devtest.html', freq_dist = freq_dist) 
+        return render_template('devtest.html', freq_dist=freq_dist)
 
 
