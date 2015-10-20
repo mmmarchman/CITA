@@ -21,7 +21,7 @@ class Parser(object):
         self.top_n = top_n
 
         # Make a usable list of the words in exclusion_list.txt
-        with open('exclusion_list.txt') as excl_file:
+        with open('/var/www/html/CITA/Web/app/main/exclusion_list.txt') as excl_file:
             for line in excl_file:
                 self.stop_words.append(line.strip())
 
