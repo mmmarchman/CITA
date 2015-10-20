@@ -28,7 +28,9 @@ def dictionary_factory(cursor, row):
 @main.before_request
 def before_request():
     g.user = current_user.get_id()
-    g.companyid = current_user.company_id
+
+    if current_user.is_authenticated:
+        g.companyid = current_user.company_id
     g.citadb = get_connection()
 
 
@@ -68,6 +70,7 @@ def trends():
 @login_required
 def history():
     return render_template('history.html')
+
 
 @main.route('/datamanagement')
 @login_required
