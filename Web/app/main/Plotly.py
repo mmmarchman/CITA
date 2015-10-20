@@ -12,7 +12,7 @@ class TestPlotly:
     #go.tools.set_credentials_file(username='mmmarchman', api_key='jqfkdptmgy')
 
 
-    tls.tools.set_credentials_file(username='mmmarchman', api_key='jqfkdptmgy')
+    tls.set_credentials_file(username='mmmarchman', api_key='jqfkdptmgy')
 
 
     word_count_list = None
