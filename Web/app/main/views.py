@@ -22,15 +22,8 @@ def dictionary_factory(cursor, row):
 def before_request():
     g.user = current_user.get_id()
     if current_user.is_authenticated:
-        g.companyid = current_user.company_id
+       g.companyid = current_user.company_id
     g.citadb = get_connection()
-
-
-@main.route("/logout")
-@login_required
-def logout():
-    g.session.delete(companyid)
-    return render_template('index.html')
 
 
 @main.route('/')
