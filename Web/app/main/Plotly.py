@@ -6,14 +6,9 @@ __author__ = 'McClain Marchman'
 
 import plotly.plotly as py
 import plotly.graph_objs as go
-import plotly.tools as tls
+
 
 class TestPlotly:
-    #go.tools.set_credentials_file(username='mmmarchman', api_key='jqfkdptmgy')
-
-
-    tls.set_credentials_file(username='mmmarchman', api_key='jqfkdptmgy')
-
 
     word_count_list = None
 
