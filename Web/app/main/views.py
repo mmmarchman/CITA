@@ -133,7 +133,7 @@ def devtest():
             for e in r:
                 if e != None:
                     testlist.append(str(e))
-        parse = Parser(testlist, 100)
+        parse = Parser(testlist, 20)
         freq_dist = parse.parse()
         #flash(u"Initial SQL query results: %s" % resultlist)
         #flash(u"Convertion removes null, decodes, converts to list of strings: %s" %testlist)
