@@ -3,7 +3,7 @@
 """ Tests Parser.py"""
 
 from Parser import Parser
-import test_plotly
+from Parser import
 
 
 __author__ = 'McClain Marchman'
