@@ -133,7 +133,7 @@ def devtest():
         freq_dist = parse.parse()
         #flash(u"Initial SQL query results: %s" % resultlist)
         #flash(u"Convertion removes null, decodes, converts to list of strings: %s" %testlist)
-        flash(u"Parse results: %s" %freq_dist)
+        #flash(u"Parse results: %s" %freq_dist)
         return render_template('devtest.html', freq_dist=freq_dist)
 
 
