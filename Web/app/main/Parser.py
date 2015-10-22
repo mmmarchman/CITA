@@ -24,7 +24,7 @@ class Parser(object):
         # Make a usable list of the words in exclusion_list.txt
         # LAMP server: /var/www/html/CITA/Web/app/main/exclusion_list.txt
         # McClain Desktop: C:\Users\McClain\Documents\GitHub\CITA\Web\\app\main\exclusion_list.txt
-        with open('/var/www/html/CITA/Web/app/main/exclusion_list.txt') as excl_file:
+        with open('C:\Users\McClain\Documents\GitHub\CITA\Web\\app\main\exclusion_list.txt') as excl_file:
             for line in excl_file:
                 self.stop_words.append(line.strip())
 
