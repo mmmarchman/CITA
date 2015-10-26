@@ -57,5 +57,6 @@ class Parser(object):
         fdist = fdist.most_common(self.top_n)
 
         graph = TestPlotly(fdist)
+        graph.plot()
 
         return fdist
