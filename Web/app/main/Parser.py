@@ -6,6 +6,7 @@ import nltk
 from nltk.tokenize import RegexpTokenizer
 
 from Plotly import TestPlotly
+import os
 
 __author__ = 'McClain Marchman'
 __email__ = 'mmmarchman@gmail.com'
@@ -23,10 +24,11 @@ class Parser(object):
         self.list_strings = list_strings
         self.top_n = top_n
 
+        cwd = os.getcwd()
+        ex_location = os.path.join(cwd, 'exclusion_list.txt')
+
         # Make a usable list of the words in exclusion_list.txt
-        # LAMP server: /var/www/html/CITA/Web/app/main/exclusion_list.txt
-        # McClain Desktop: C:\Users\McClain\Documents\GitHub\CITA\Web\\app\main\exclusion_list.txt
-        with open('/var/www/html/CITA/Web/app/main/exclusion_list.txt') as excl_file:
+        with open(ex_location) as excl_file:
             for line in excl_file:
                 self.stop_words.append(line.strip())
 

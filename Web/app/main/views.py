@@ -6,17 +6,16 @@ import forms
 import sqlite3
 from .. import models
 from Parser import Parser
+import os
 
 
 def get_connection():
 
-    
-    # For local testing - C:/Users/McClain/Documents/GitHub/CITA/Web/data-dev.sqlite
-    # For deployment on the LAMP Server - /var/www/html/CITA/Web/data-dev.sqlite
-    conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
-
-    #conn = sqlite3.connect('/var/www/html/CITA/Web/data-dev.sqlite')
-
+    # Combines current working directory with the name of the db
+    # so that we can operate on multiple platforms
+    cwd = os.getcwd()
+    db_location = os.path.join(cwd, 'data-dev.sqlite')
+    conn = sqlite3.connect(db_location)
     return conn
 
 
