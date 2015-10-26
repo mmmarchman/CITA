@@ -7,20 +7,36 @@
 <h1>Very basic results to show word count functioning.  Needs expansion, style, etc to clarify results to client.</h1>
 </div>
 
+<div class="container">
+  <div class="col-md-6">
+  <iframe width="700" height="700" frameborder="0" scrolling="no" align="right" src="https://plot.ly/~mmmarchman/31.embed"></iframe>
+  </div>
+  <div class="col-md-6">
+  <div class="table-bordered">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <tr>
+        <th>Word</th>
+        <th>Frequency</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for word in freq_dist %}
+      <tr>
 
-<table style="border-collapse: collapse; border: 2px solid black; padding:1px; margin:25px; align:">
-  <tr>
-    <th style="width=30%;text-align:center; border: 2px solid black;">Word</th>
-    <th style="width=30%;text-align:center; border: 2px solid black;">Frequency</th>
-  </tr>
-{% for word in freq_dist %}
-  <tr>
-    <td style="padding:1px; border: 2px solid black;">{{ word[0] }}</td>
-    <td style="padding:1px; border: 2px solid black;">{{ word[1] }}</td>
-  </tr>
-{% endfor %}
-</table>
+        <td>{{ word[0] }}</td>
+        <td>{{ word[1] }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  </div>
+</div>
 
-<iframe width="500" height="500" frameborder="0" scrolling="no" align="right" src="https://plot.ly/~mmmarchman/31.embed"></iframe>
+
 <br /><br />
 {% endblock %}
+
+

@@ -42,8 +42,8 @@ class TestPlotly:
             title=self.title,       # set plot title
             showlegend=False,  # remove legend
             orientation = 'h',
-            width=500,
-            height=500,
+            width=700,
+            height=700,
             autosize=False,
             yaxis=go.YAxis(title='Words', zeroline=False, gridcolor='white'),
             xaxis=go.XAxis(title='Frequency', gridcolor='white'),

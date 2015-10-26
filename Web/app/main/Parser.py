@@ -3,6 +3,8 @@
 """ Creates a Parser object which takes in a list of strings and returns a frequency dist list"""
 
 import nltk
+from nltk.tokenize import RegexpTokenizer
+
 from Plotly import TestPlotly
 
 __author__ = 'McClain Marchman'
@@ -24,7 +26,7 @@ class Parser(object):
         # Make a usable list of the words in exclusion_list.txt
         # LAMP server: /var/www/html/CITA/Web/app/main/exclusion_list.txt
         # McClain Desktop: C:\Users\McClain\Documents\GitHub\CITA\Web\\app\main\exclusion_list.txt
-        with open('C:\Users\McClain\Documents\GitHub\CITA\Web\\app\main\exclusion_list.txt') as excl_file:
+        with open('/var/www/html/CITA/Web/app/main/exclusion_list.txt') as excl_file:
             for line in excl_file:
                 self.stop_words.append(line.strip())
 
@@ -36,9 +38,10 @@ class Parser(object):
         # Divides the single list string into substrings representing a word
         self.word_list = [nltk.sent_tokenize(line) for line in self.word_list]
 
+        tokenizer = RegexpTokenizer(r'\w+')
         # Separates punctuation
         for sentence in self.word_list:
-            self.word_list = nltk.wordpunct_tokenize(str(sentence).lower())
+            self.word_list = tokenizer.tokenize(str(sentence).lower())
 
         # Remove all stop words in big_string
         self.word_list = [w for w in self.word_list if w not in self.stop_words]
