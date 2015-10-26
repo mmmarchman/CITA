@@ -3,6 +3,8 @@
 """ Creates a Parser object which takes in a list of strings and returns a frequency dist list"""
 
 import nltk
+from nltk.tokenize import RegexpTokenizer
+
 from Plotly import TestPlotly
 
 __author__ = 'McClain Marchman'
@@ -36,9 +38,10 @@ class Parser(object):
         # Divides the single list string into substrings representing a word
         self.word_list = [nltk.sent_tokenize(line) for line in self.word_list]
 
+        tokenizer = RegexpTokenizer(r'\w+')
         # Separates punctuation
         for sentence in self.word_list:
-            self.word_list = nltk.wordpunct_tokenize(str(sentence).lower())
+            self.word_list = tokenizer.tokenize(str(sentence).lower())
 
         # Remove all stop words in big_string
         self.word_list = [w for w in self.word_list if w not in self.stop_words]
@@ -57,5 +60,6 @@ class Parser(object):
         fdist = fdist.most_common(self.top_n)
 
         graph = TestPlotly(fdist)
+        graph.plot()
 
         return fdist
