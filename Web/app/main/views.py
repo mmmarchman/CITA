@@ -14,6 +14,7 @@ def get_connection():
     # Combines current working directory with the name of the db
     # so that we can operate on multiple platforms
     cwd = os.getcwd()
+    print cwd
     db_location = os.path.join(cwd, 'data-dev.sqlite')
     conn = sqlite3.connect(db_location)
     return conn

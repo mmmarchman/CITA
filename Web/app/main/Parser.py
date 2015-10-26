@@ -25,6 +25,7 @@ class Parser(object):
         self.top_n = top_n
 
         cwd = os.getcwd()
+        print cwd
         ex_location = os.path.join(cwd, 'exclusion_list.txt')
 
         # Make a usable list of the words in exclusion_list.txt
