@@ -6,6 +6,7 @@ __author__ = 'McClain Marchman'
 
 import plotly.plotly as py
 import plotly.graph_objs as go
+py.sign_in('mmmarchman', 'jqfkdptmgy')
 
 
 class TestPlotly:
@@ -48,8 +49,7 @@ class TestPlotly:
             yaxis=go.YAxis(title='Words', zeroline=False, gridcolor='white'),
             xaxis=go.XAxis(title='Frequency', gridcolor='white'),
 
-            paper_bgcolor='rgb(233,233,233)',  # set paper (outside plot)
-            plot_bgcolor='rgb(233,233,233)',   # and plot color to grey
+
             )
 
         # Make Figure object

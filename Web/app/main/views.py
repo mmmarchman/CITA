@@ -31,6 +31,7 @@ def before_request():
 
     if current_user.is_authenticated:
         g.companyid = current_user.company_id
+
     g.citadb = get_connection()
 
 
