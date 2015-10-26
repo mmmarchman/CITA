@@ -49,8 +49,7 @@ class TestPlotly:
             yaxis=go.YAxis(title='Words', zeroline=False, gridcolor='white'),
             xaxis=go.XAxis(title='Frequency', gridcolor='white'),
 
-            paper_bgcolor='rgb(233,233,233)',  # set paper (outside plot)
-            plot_bgcolor='rgb(233,233,233)',   # and plot color to grey
+
             )
 
         # Make Figure object
