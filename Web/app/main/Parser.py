@@ -20,12 +20,14 @@ class Parser(object):
     top_n = None
 
     # Takes in a list of strings and the number top results to return
+    # TODO: Fix the duplication of data-dev and exclusion list
     def __init__(self, list_strings, top_n):
         self.list_strings = list_strings
         self.top_n = top_n
 
-        cwd = os.getcwd()
-        ex_location = os.path.join(cwd, 'exclusion_list.txt')
+        basedir = os.path.abspath(os.path.dirname(__file__))
+        ex_location = os.path.join(basedir, 'exclusion_list.txt')
+
 
         # Make a usable list of the words in exclusion_list.txt
         with open(ex_location) as excl_file:
