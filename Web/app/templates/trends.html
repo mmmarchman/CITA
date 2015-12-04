@@ -1,12 +1,8 @@
 {% extends "base.html" %}
 
-
-
 {% block title %}Trends{% endblock %}
 
 {% block page_content %}
-
-
 <div class="page-header">
     <h1>Welcome to Your Trending Data Section, {% if current_user.is_authenticated %}{{current_user.username}}{% else %}Please Click <a href="{{ url_for('auth.login') }}">HERE</a> to Login{% endif %}!</h1>
 </div>
@@ -21,7 +17,6 @@
     {{ render_field(form.subissue) }}
     {{ render_field(form.company) }}
     {{ render_field(form.state) }}
-
 
     <html>
   <head>
@@ -87,9 +82,6 @@
   </body>
 </html>
 
-    <p><p><br /><input type=submit value="Search for Trends">
+  <p><p><br /><input type=submit value="Search for Trends">
 </form>
-
-
-
-{% endblock %}
+{% endblock %}/
