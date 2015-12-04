@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
+
+
 {% block title %}Trends{% endblock %}
 
 {% block page_content %}
+
+
 <div class="page-header">
     <h1>Welcome to Your Trending Data Section, {% if current_user.is_authenticated %}{{current_user.username}}{% else %}Please Click <a href="{{ url_for('auth.login') }}">HERE</a> to Login{% endif %}!</h1>
 </div>
@@ -17,13 +21,74 @@ Please Select the Data to be Parsed:<br /><br />
     {{ render_field(form.subissue) }}
     {{ render_field(form.company) }}
     {{ render_field(form.state) }}
-<p><p><br /><input type=submit value="Search for Trends">
+
+    <html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+  </head>
+  <body>
+    <div id="StartDate" class="input-append date">
+      <input type="text">
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+    </div>
+    <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-EN.js">
+    </script>
+    <script type="text/javascript">
+      $('#StartDate').datetimepicker({
+        format: 'MM/dd/yyyy',
+        language: 'pt-EN'
+      });
+    </script>
+  </body>
+</html>
+
+        <html>
+
+  <body>
+    <div id="EndDate" class="input-append date">
+      <input type="text">
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+    </div>
+    <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-EN.js">
+    </script>
+    <script type="text/javascript">
+      $('#EndDate').datetimepicker({
+        format: 'MM/dd/yyyy',
+        language: 'pt-EN'
+      });
+    </script>
+  </body>
+</html>
+
+    <p><p><br /><input type=submit value="Search for Trends">
 </form>
 
-<div class="progress progress-striped active">
-<div class="progress-bar"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-    <span class="sr-only"></span>
-</div>
-</div>
 
-{% endblock %}/
+
+{% endblock %}

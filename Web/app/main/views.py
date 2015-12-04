@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, g, flash
 from flask.ext.login import login_required, current_user
 from wtforms import Form, FloatField, BooleanField, TextField, validators
+from wtforms.fields.html5 import DateField
+from datetime import datetime
 from . import main
 import forms
 import sqlite3
@@ -59,13 +61,23 @@ def trends():
     conn = get_connection()
     #conn.text_factory = str
     form = forms.NameForm(request.form)
+
     form.product.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='product').order_by('column_values')]
     form.subproduct.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='subproduct').order_by('column_values')]
     form.issue.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='issue').order_by('column_values')]
     form.subissue.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='subissue').order_by('column_values')]
     form.company.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='company').order_by('column_values')]
     form.state.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='state').order_by('column_values')]
-    return render_template('trends.html', form=form)
+    # form.date.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='date').order_by('column_values')]
+
+    form.start_date.data = datetime.now()
+    form.end_date.data = datetime.now()
+
+
+    # form.start_date = DateField('DatePicker', format='%Y-%m-%d')
+    # form.end_date = DateField('DatePicker', format='%Y-%m-%d')
+
+    return render_template('trends.html', form=form,)
 
 
 @main.route('/history')

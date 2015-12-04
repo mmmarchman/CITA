@@ -6,6 +6,11 @@
 {{ super() }}
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap-datetimepicker.min.css') }}">
+<link rel="javascript" type="text/javascript" href="{{ url_for('static', filename='bootstrap-datetimepicker.min.js') }}">
+
+
 {% endblock %}
 
 {% block navbar %}
