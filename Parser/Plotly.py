@@ -56,13 +56,3 @@ class TestPlotly:
 
         # (@) Send to Plotly and show in notebook
         py.plot(self.fig, filename='CITA-Bar-Graph')
-
-
-
-
-
-
-
-
-
-

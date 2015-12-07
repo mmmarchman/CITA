@@ -5,7 +5,7 @@
 import nltk
 from nltk.tokenize import RegexpTokenizer
 
-from Plotly import TestPlotly
+from .Plotly import TestPlotly
 import os
 
 __author__ = 'McClain Marchman'
@@ -63,7 +63,7 @@ class Parser(object):
         fdist = nltk.FreqDist(self.word_list)
         fdist = fdist.most_common(self.top_n)
 
-        graph = TestPlotly(fdist)
-        graph.plot()
+        #graph = TestPlotly(fdist)
+        #graph.plot()
 
         return fdist

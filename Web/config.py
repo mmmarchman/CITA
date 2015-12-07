@@ -63,7 +63,7 @@ class ProductionConfig(Config):
             secure=secure)
         mail_handler.setLevel(logging.ERROR)
         app.logger.addHandler(mail_handler)
-        print "I am in the Production config init_app"
+        print ("I am in the Production config init_app")
 
 
 class UnixConfig(ProductionConfig):

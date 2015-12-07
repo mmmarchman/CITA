@@ -7,81 +7,36 @@
     <h1>Welcome to Your Trending Data Section, {% if current_user.is_authenticated %}{{current_user.username}}{% else %}Please Click <a href="{{ url_for('auth.login') }}">HERE</a> to Login{% endif %}!</h1>
 </div>
 
-<p>Please Select the Data to be Parsed:</p><br /><br />
-
 {% from "_formhelpers.html" import render_field %}
-<form method=POST action="/devtest">
-    {{ render_field(form.product) }}
-    {{ render_field(form.subproduct) }}    
-    {{ render_field(form.issue) }}
-    {{ render_field(form.subissue) }}
-    {{ render_field(form.company) }}
-    {{ render_field(form.state) }}
+<form method=POST action="/results">
+    <table class="table-bordered">
+      <tr style="padding: 10px">
+        <td style="padding: 10px">
+          <div class="firstdaterange">
+        <h3>First Date Range to analyze:</h3>
+        {{ render_field(range1form.start_date1) }}
+        {{ render_field(range1form.end_date1) }}
+        </div>
+        <div class="seconddaterange">
+        <h3>Second Date Range to analyze:</h3>
+        {{ render_field(range2form.start_date2) }}
+        {{ render_field(range2form.end_date2) }}
+        </div>
 
-    <html>
-  <head>
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen"
-     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
-  </head>
-  <body>
-    <div id="StartDate" class="input-append date">
-      <input type="text">
-      <span class="add-on">
-        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-      </span>
-    </div>
-    <script type="text/javascript"
-     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-EN.js">
-    </script>
-    <script type="text/javascript">
-      $('#StartDate').datetimepicker({
-        format: 'MM/dd/yyyy',
-        language: 'pt-EN'
-      });
-    </script>
-  </body>
-</html>
-
-        <html>
-
-  <body>
-    <div id="EndDate" class="input-append date">
-      <input type="text">
-      <span class="add-on">
-        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-      </span>
-    </div>
-    <script type="text/javascript"
-     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-EN.js">
-    </script>
-    <script type="text/javascript">
-      $('#EndDate').datetimepicker({
-        format: 'MM/dd/yyyy',
-        language: 'pt-EN'
-      });
-    </script>
-  </body>
-</html>
-
-  <p><p><br /><input type=submit value="Search for Trends">
+        </td>
+        <td style="padding: 10px">
+          <div class="filters">
+          <h3>Search data with the following values:</h3>
+            {{ render_field(form.product) }}
+            {{ render_field(form.subproduct) }}
+            {{ render_field(form.issue) }}
+            {{ render_field(form.subissue) }}
+            {{ render_field(form.company) }}
+            {{ render_field(form.state) }}
+          </div>
+        </td>
+      </tr>
+    </table>
+    <p><p><br /><input type=submit value="Search for Trends">
 </form>
-{% endblock %}/
+{% endblock %}

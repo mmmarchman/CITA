@@ -8,7 +8,7 @@ __author__ = 'McClain Marchman'
 __email__ = 'mmmarchman@gmail.com'
 
 
-class Parser(object):
+class parser(object):
     list_strings = None
     word_list = []
     dict_top_words = None

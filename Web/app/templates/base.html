@@ -27,7 +27,10 @@
                 <li><a href="{{ url_for('main.trends') }}">Identify Trends</a></li>
                 <li><a href="{{ url_for('main.datamanagement') }}">Data Management</a></li>
                 <li><a href="{{ url_for('main.history') }}">Client History</a></li>
-                <li><a href="{{ url_for('main.profile') }}">User Profile</a></li>
+                    {% if current_user.role_id == 3 %}
+                    <li><a href="{{ url_for('main.cadmin') }}">Admin-Companies</a></li>
+                    <li><a href="{{ url_for('main.uadmin') }}">Admin-Users</a></li>
+                    {% endif %}
                 {% endif%}
             </ul>
             <ul class="nav navbar-nav navbar-right">

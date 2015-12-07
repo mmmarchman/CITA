@@ -15,6 +15,6 @@ list_string = ['Unable to get credit report/credit score', 'Fraud or scam', 'Cre
 parse = Parser(list_string, 10)
 freq_dist = parse.parse()
 
-print freq_dist
+print (freq_dist)
 
 plot = TestPlotly(freq_dist)

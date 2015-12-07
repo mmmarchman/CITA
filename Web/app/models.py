@@ -15,6 +15,7 @@ class Role(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
     default = db.Column(db.Boolean, default=False, index=True)
+    permissions = db.Column(db.Integer)
     users = db.relationship('User', backref='role', lazy='dynamic')
 
     def __repr__(self):
@@ -44,6 +45,18 @@ class User(UserMixin, db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 
+    def __int__(self, username, email, pw, companyid):
+        self.username = username
+        self.email = email
+        self.password = pw
+        self.company_id = companyid
+
+    def insertUser(user_name, email, password, companyid):
+        user = User(user_name, email, password, companyid)
+        db.session.add(user)
+        db.session.commit()
+        return
+
 
 class AData(db.Model):
     __tablename__='a_data'
@@ -69,10 +82,20 @@ class Company(db.Model):
     contract_reference = db.Column(db.String(128))
     start_date = db.Column(db.Date)
     end_date = db.Column(db.Date)
+    data_table = db.Column(db.String(128))
+
+    def insertCompany(companyname, contractreference):
+        company = Company(companyname, contractreference)
+        db.session.add(company)
+        db.session.commit()
+        return
 
     def __repr__(self):
         return '<Company %r>' % self.company_name
 
+    def __init__(self, companyname, contractreference):
+        self.company_name = companyname
+        self.contract_reference = contractreference
 
 class StructuredData(db.Model):
     __tablename__='structured_data'
