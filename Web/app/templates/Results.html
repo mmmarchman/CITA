@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Trend Data Requests{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+<h1>Trending Data</h1>
+</div>
+
+<div class="container">
+  <div class="col-md-6">
+  <!--
+      <iframe width="700" height="700" frameborder="0" scrolling="no" align="right" src="https://plot.ly/~mmmarchman/31.embed"></iframe>
+  -->
+  </div>
+  <div class="col-md-6">
+    <div class="table-bordered">
+    <table class="table table-bordered">
+      <tr>
+          <th>{{ range1start }} through {{ range1end }}</th>
+          <th>{{ range2start }} through {{ range2end }}</th>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <thead title="First Date Range">
+              <tr>
+              <th>Word</th>
+              <th>Frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for word in freq_dist1 %}
+              <tr>
+                <td>{{word[0]}}</td>
+                <td>{{word[1]}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table>
+            <thead title="Second Date Range">
+              <tr>
+                <th>Word</th>
+                <th>Frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for word in freq_dist2 %}
+              <tr>
+                <td>{{word[0]}}</td>
+                <td>{{word[1]}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+
+    </div>
+  </div>
+</div>
+{% endblock %}

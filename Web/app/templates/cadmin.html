@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Company Management{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+<h1>Company Management</h1>
+</div>
+
+{% from "_formhelpers.html" import render_field %}
+<div id="current_companies">
+<form>
+<h2>Current Companies</h2>
+    <table border="1" style="padding: 10px; border-spacing: 5px;">
+    <tr>
+        <th>Company ID</th>
+        <th>Company Name</th>
+        <th>Contract Reference</th>
+    </tr>
+    {% for c in companylist %}
+        <tr>
+            <td>{{ c['company_id'] }}</td>
+            <td>{{ c['company_name'] }}</td>
+            <td>{{ c['contract_reference'] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+<p><p><br />
+</form>
+</div>
+<hr>
+<div id="add_company">
+<h2>Add New Company</h2>
+<form method=POST action="/cadmin">
+    {{ render_field(form.company_name) }}
+    {{ render_field(form.contract_reference) }}
+    <p><br />
+    <input type=submit value="Add Company">
+</form>
+</div>
+<br /><br />
+{% endblock %}

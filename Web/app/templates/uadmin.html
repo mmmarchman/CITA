@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}User Management{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+<h1>User Management</h1>
+</div>
+
+{% from "_formhelpers.html" import render_field %}
+<div id="current_users">
+<form>
+<h2>Current Users</h2>
+    <table border="1" style="padding: 10px; border-spacing: 5px;">
+    <tr>
+        <th>User ID</th>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>User Company</th>
+    </tr>
+    {% for u in userlist %}
+        <tr>
+            <td>{{ u['id'] }}</td>
+            <td>{{ u['username'] }}</td>
+            <td>{{ u['email'] }}</td>
+            <td>{{ u['company_id'] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+<p><p><br />
+</form>
+</div>
+<hr>
+<div id="add_user">
+<h2>Add New User</h2>
+<form method="POST" action="/uadmin">
+    {{ render_field(form.user_name) }}
+    {{ render_field(form.user_email) }}
+    {{ render_field(form.user_company) }}
+    <p><br/>
+    <input type="submit" value="Add User">
+</form>
+</div>
+<br /><br />
+{% endblock %}
