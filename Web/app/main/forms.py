@@ -4,13 +4,9 @@ from wtforms.fields.html5 import DateField
 from wtforms.validators import Required, Length, Regexp, Email
 from ..models import User
 
-from flask_admin.form.widgets import DatePickerWidget
-
 
 
 class NameForm(Form):
-    start_date = DateField('Start Date', format='%Y-%m-%d', widget=DatePickerWidget())
-    end_date = DateField('End Date', format='%Y-%m-%d',  widget=DatePickerWidget())
     product = SelectField(u'Product')
     subproduct = SelectField('Subproduct')
     issue = SelectField('Issue')
