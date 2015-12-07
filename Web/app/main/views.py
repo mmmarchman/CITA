@@ -91,6 +91,7 @@ def trends():
     range2form.start_date2.data = datetime.strptime(startdate[0], '%Y-%m-%d')
     range2form.end_date2.data = datetime.strptime(enddate[0], '%Y-%m-%d')
 
+    # IF G.COMPANY_ID == 1:
     form = forms.Company1Form(request.form)
     #form.start_date.data = datetime.strptime(startdate[0], '%Y-%m-%d')
     #form.end_date.data = datetime.strptime(enddate[0], '%Y-%m-%d')
@@ -101,6 +102,9 @@ def trends():
     form.subissue.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='subissue').order_by('column_values')]
     form.company.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='company').order_by('column_values')]
     form.state.choices = [("%", "ALL")] + [(g.column_values, g.column_values) for g in models.StructuredData.query.filter(models.StructuredData.column_name =='state').order_by('column_values')]
+
+    #IF G.COMPANY_ID == 2:
+    # different forms
 
     return render_template('trends.html',form=form,startdate=startdate,enddate=enddate,range1form=range1form,range2form=range2form)
 
@@ -122,11 +126,12 @@ def datamanagement():
 def results():
     conn = get_connection()
     #conn.text_factory = str
-    form = forms.Company1Form(request.form)
 
     range1form = forms.DateRangeForm1(request.form)
     range2form = forms.DateRangeForm2(request.form)
 
+    #IF G.COMPANY_ID == 1:
+    form = forms.Company1Form(request.form)
     if request.method == 'POST':
         query1 = "select customer_complaint from a_data"
         andflag = 0
