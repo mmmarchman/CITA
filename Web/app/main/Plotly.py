@@ -59,6 +59,8 @@ class TestPlotly:
             width=500,
             height=500,
             autosize=True,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
             yaxis=go.YAxis(title='Words', zeroline=False, gridcolor='white'),
             xaxis=go.XAxis(title='Frequency', gridcolor='white'),
             barmode='group'
