@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, g, flash, redirect, url_for
+from flask import render_template, request, g, flash, redirect, url_for
+import flask
 from flask.ext.login import login_required, current_user
 from ..decorators import admin_required, permission_required
 from wtforms import Form, FloatField, BooleanField, TextField, validators
@@ -30,10 +31,10 @@ def dictionary_factory(cursor, row):
 
 @main.before_request
 def before_request():
-    g.user = current_user.get_id()
+    flask.g.user = current_user.get_id()
 
     if current_user.is_authenticated:
-        g.companyid = current_user.company_id
+        flask.g.companyid = current_user.company_id
 
     #g.citadb = get_connection()
 
@@ -65,7 +66,7 @@ def uadmin():
     form = forms.AddUserForm(request.form)
     form.user_company.choices = [("", "")] + [(c.company_id, c.company_name) for c in models.Company.query.all()]
     form.user_company.default = [("", "")]
-    if request.method== 'POST':
+    if request.method == 'POST':
         print('post')
         form = forms.AddUserForm(request.form)
         user = models.User(username = form.user_name.data, email = form.user_email.data, password = 'citanewuser', company_id = form.user_company.data)
@@ -78,8 +79,8 @@ def uadmin():
 @login_required
 def trends():
     conn = get_connection()
-    startdatequery = 'SELECT start_date FROM company WHERE company_id =' + str(g.companyid)
-    enddatequery = 'SELECT end_date FROM company WHERE company_id =' + str(g.companyid)
+    startdatequery = 'SELECT start_date FROM company WHERE company_id =' + str(flask.g.companyid)
+    enddatequery = 'SELECT end_date FROM company WHERE company_id =' + str(flask.g.companyid)
     startdate = conn.execute(startdatequery).fetchone()
     enddate = conn.execute(enddatequery).fetchone()
 
