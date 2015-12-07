@@ -5,7 +5,7 @@
 import nltk
 from nltk.tokenize import RegexpTokenizer
 
-from Plotly import TestPlotly
+from .Plotly import TestPlotly
 import os
 
 __author__ = 'McClain Marchman'
