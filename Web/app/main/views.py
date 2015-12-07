@@ -194,10 +194,9 @@ def results():
             for e in r:
                 if e != None:
                     testlist2.append(str(e))
-        parse1 = Parser(testlist1, 20)
-        parse2 = Parser(testlist2, 20)
+        parse1 = Parser(testlist1, testlist2, 20)
         freq_dist1 = parse1.parse()
-        freq_dist2 = parse2.parse()
+
         #flash(u"Initial SQL query results: %s" % resultlist)
         #flash(u"Convertion removes null, decodes, converts to list of strings: %s" %testlist)
         #flash(u"Parse results: %s" %freq_dist)
@@ -206,8 +205,8 @@ def results():
         range2start = range2form.start_date2._value()
         range2end = range2form.end_date2._value()
         return render_template('results.html',
-                               freq_dist1=freq_dist1,
-                               freq_dist2=freq_dist2,
+                               freq_dist1=freq_dist1[0],
+                               freq_dist2=freq_dist1[1],
                                range1start=range1start,
                                range1end=range1end,
                                range2start=range2start,
