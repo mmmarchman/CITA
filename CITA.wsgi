@@ -18,6 +18,6 @@ import plotly.plotly as py
 application = create_app(os.getenv('FLASK_CONFIG') or 'default')
 
 if __name__ == '__main__':
-	py.sign_in('mmmarchman', 'jqfkdptmgy')
+	py.sign_in('CITAservice', 'ej6bllje5v')
 	application.run()
 
