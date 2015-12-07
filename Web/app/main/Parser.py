@@ -63,7 +63,7 @@ class Parser(object):
         fdist = nltk.FreqDist(self.word_list)
         fdist = fdist.most_common(self.top_n)
 
-        #graph = TestPlotly(fdist)
-        #graph.plot()
+        graph = TestPlotly(fdist)
+        graph.plot()
 
         return fdist
