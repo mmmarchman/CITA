@@ -18,23 +18,36 @@ class TestPlotly:
     fig = None
     words = []
     counts = []
+    words2 = []
+    counts2 = []
 
-    def __init__(self, word_count_list):
+    def __init__(self, word_count_list, word_count_list2):
         self.word_count_list = word_count_list
+        self.word_count_list2 = word_count_list2
 
     def plot(self):
         for j, k in reversed(self.word_count_list):
             self.words.append(j)
             self.counts.append(k)
+        for j, k in reversed(self.word_count_list2):
+            self.words2.append(j)
+            self.counts2.append(k)
 
         trace_bar1 = go.Bar(
             x=self.counts,
             y=self.words,
             orientation='h',
-            marker=go.Marker(color='#E3BA22'))
+            marker=go.Marker(color=u'rgb(222, 113, 88)'))
+
+        trace_bar2 = go.Bar(
+            x=self.counts2,
+            y=self.words2,
+            orientation='h',
+            marker=go.Marker(color=u'rgb(84, 172, 234)'))
+
 
         # Make Data object
-        self.data = go.Data([trace_bar1])
+        self.data = go.Data([trace_bar1, trace_bar2])
 
         self.title = 'Word Frequency'  # plot's title
 
@@ -43,11 +56,12 @@ class TestPlotly:
             title=self.title,       # set plot title
             showlegend=False,  # remove legend
             orientation = 'h',
-            width=700,
-            height=700,
-            autosize=False,
+            width=500,
+            height=500,
+            autosize=True,
             yaxis=go.YAxis(title='Words', zeroline=False, gridcolor='white'),
             xaxis=go.XAxis(title='Frequency', gridcolor='white'),
+            barmode='group'
 
 
             )
