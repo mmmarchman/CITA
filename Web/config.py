@@ -14,7 +14,7 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     CITA_MAIL_SUBJECT_PREFIX = '[CITA]'
-    CITA_MAIL_SENDER = 'CITA Admin <admin@CITA.com>'
+    CITA_MAIL_SENDER = 'CITA Admin <citawebservice@gmail.com>'
     CITA_ADMIN = os.environ.get('CITA_ADMIN')
     CITA_SLOW_DB_QUERY_TIME = 0.5
 
