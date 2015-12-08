@@ -1,3 +1,5 @@
+from time import sleep
+
 from flask import render_template, request, g, flash, redirect, url_for
 import flask
 from flask.ext.login import login_required, current_user
@@ -10,6 +12,7 @@ from . import forms
 import sqlite3
 from .. import models
 from .. import db
+from ..email import send_email
 from .Parser import Parser
 import os
 
@@ -44,6 +47,14 @@ def index():
     return render_template('index.html')
 
 
+@main.route('/upload', methods=['POST'])
+@login_required
+def upload():
+    for i in range(8):
+            sleep(.5)
+    flash("Your file has been uploaded and will be analyzed within 24 hours.  You will be emailed when analysis is complete and your data is available for viewing.")
+    return render_template('index.html')
+
 @main.route('/cadmin', methods=['GET','POST'])
 @login_required
 def cadmin():
@@ -71,7 +82,11 @@ def uadmin():
         form = forms.AddUserForm(request.form)
         user = models.User(username = form.user_name.data, email = form.user_email.data, password = 'citanewuser', company_id = form.user_company.data)
         db.session.add(user)
+        send_email(user.email, 'CITA Account Created', 'auth/email/confirm', user=user)
+        #sending actually fails currently b/c we're using google email server w/ admin@CITA.com sending - would work with right creds in APP variables
+        flash('Confirmation email sent to ' + user.email)
         return redirect(request.url)
+
     return render_template('uadmin.html', userlist=userlist, form=form)
 
 

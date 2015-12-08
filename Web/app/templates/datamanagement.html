@@ -4,12 +4,27 @@
 
 {% block page_content %}
 <div class="page-header">
-<h1>Provide client with ability to upload a .csv for parsing</h1>
+<h1>Upload .csv files for CITA analysis</h1>
+<br />
+CSV files must meet the following criteria to be correctly processed:<p/>
 <ul>
-
+    <li>The first line must contain column header names</li>
+    <li>Each column value must be contained within quotes</li>
+    <li>Quotes should be removed from the original data</li>
+    <li>Each column value must be separated by a comma</li>
+    <li>Commas in the original data are acceptable</li>
+    <li>The file should contain no empty lines or spaces outside the volumn values</li><p/>
 </ul>
+Example:<p/>
+"ID","ColumnName1","ColumnName2","ColumnName3"<p/>
+"1","RowValue1","RowValue2","RowValue3"<p/><br />
+Please email admin@CITA.com if clarification on .csv rules is required.<br />
 </div>
-
-
+    <body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="uploadfile"><br /><br />
+        <input type="submit" name="Upload File">
+    </form>
+    </body>
 <br /><br />
 {% endblock %}
