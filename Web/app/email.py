@@ -15,6 +15,7 @@ def send_email(to, subject, template, **kwargs):
                   sender=app.config['CITA_MAIL_SENDER'], recipients=[to])
     msg.body = render_template(template + '.txt', **kwargs)
     msg.html = render_template(template + '.html', **kwargs)
-    thr = Thread(target=send_async_email, args=[app, msg])
-    thr.start()
-    return thr
+    mail.send(msg)
+    # thr = Thread(target=send_async_email, args=[app, msg])
+    # thr.start()
+    # return thr
