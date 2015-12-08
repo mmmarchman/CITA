@@ -1,0 +1,7 @@
+{{ user.username }},
+
+A new CITA account has been created with for you.
+
+Please login using the following temporary password: citanewuser
+
+CITA Admin
