@@ -67,3 +67,7 @@ http://www.nltk.org/book/ch01.html
 
 TODO: Test merging the parser, plotly graph, and sql modules together to improve efficient
 TODO: Change location of db creation in config.py for possible solution of copy db and exclusion
+
+
+export MAIL_USERNAME=<Gmail username>
+export MAIL_PASSWORD=<Gmail password>
